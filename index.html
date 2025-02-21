@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles/styles.css"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding-top: 50px;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        header nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 50px auto 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section#hero {
+            text-align: center;
+        }
+
+        section#hero img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            main {
+                margin: 70px 10px 0 10px;
+                padding: 10px;
+            }
+
+            section#hero img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hi, I am Hussein Salim. My journey to Digital Marketing has been anything but ordinary.
+                    After years of exceeding customer expectations in the Hospitality and Aviation industries,
+                    I discovered a passion for the power of online connection.
+                </p>
+                <p>
+                    Now, I blend my innate understanding of customer needs with Digital Marketing expertise
+                    and Web Development skills, honed through The Odin Project, <a href="https://www.freecodecamp.org/salim-Hussein" target="_blank" rel="noopener">freeCodeCamp</a>, and the Meta Back-End Developer
+                    Professional Certificate program on Coursera.
+                </p>
+                <p>
+                    I specialize in creating engaging content, building thriving online communities,
+                    and developing the server-side logic that powers dynamic web applications.
+                    I'm currently seeking opportunities where I can contribute my unique blend of skills
+                    to help brands achieve their goals.
+                </p>
+                <p>
+                    To further enhance my abilities and offer a more comprehensive skillset,
+                    I committed to mastering web development through The Odin Project and <a href="https://www.freecodecamp.org/salim-Hussein" target="_blank" rel="noopener">freeCodeCamp</a>.
+                    Building upon this foundation, I am currently expanding my expertise in back-end
+                    development through the Meta Back-End Developer Professional Certificate program
+                    on Coursera, where I am gaining in-depth knowledge of server-side technologies,
+                    databases, and API development. This intensive program has equipped me with the
+                    skills to build not just websites, but also the robust infrastructure that powers
+                    dynamic and data-driven online experiences.
+                </p>
+                <img src="imagess/my-photo.png" alt="My Picture" width="200">
+            </div>
+        </section>
+
+        <section id="hero">
+            <h2>Crafting Digital Experiences That Inspire</h2>
+            <p>I build modern, responsive websites and web applications that are both beautiful and functional. Let's bring your vision to life.</p>
+            
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>E-commerce Solutions</h3>
+                <p>Increase your online sales and reach more customers with our powerful e-commerce solutions. We provide the tools and expertise you need to succeed in the competitive online marketplace.</p>
+            </div>
+            <div class="service">
+                <h3>Web design and Development</h3>
+                <p>My website design and development services cover everything you need for a successful online presence. We create user-friendly, mobile-optimized websites that are not only beautiful but also drive results. I specialize in [mention any specific technologies or platforms, e.g., WordPress, React, custom development</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
